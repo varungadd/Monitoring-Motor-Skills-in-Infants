@@ -1,0 +1,100 @@
+# Monitoring Motor Skills in Infants
+
+A comprehensive application for monitoring and analyzing motor skills in infants using Infant Pose Estimation.
+
+## 📋 Table of Contents
+
+- [📖 Introduction](#introduction)
+- [✨ Features](#features)
+- [💻 Tech Stack](#tech-stack)
+- [🚀 Setup](#setup)
+- [🔧 Usage](#usage)
+- [🤝 Contributing](#contributing)
+- [📜 License](#license)
+
+## 📖 Introduction
+
+This project aims to monitor the motor skills in infants using Infant Pose Estimation. The application detects and tracks the poses of infants, providing valuable insights into their motor skills development.
+
+## ✨ Features
+
+- **Pose Estimation**: Detect and track the poses of infants using advanced computer vision techniques.
+- **Real-Time Analysis**: Perform real-time pose estimation and analysis.
+- **Educational Content**: Provide tutorials and guides to help users understand and use the system.
+- **User-Friendly Interface**: Simple and intuitive interface for easy navigation.
+- **Data Organization**: Download and organize necessary datasets and models for pose estimation.
+
+## 💻 Tech Stack
+
+**Languages and Technologies:**
+
+- Python
+- CUDA
+
+**Tools & Libraries:**
+
+- OpenCV
+- PyTorch
+- Infant Pose Estimation models
+
+## 🚀 Setup
+
+### Prerequisites
+
+- Python 3.x
+- CUDA-enabled GPU (for faster processing)
+- Virtual environment tools (e.g., virtualenv, pipenv)
+
+### Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/varungadd/Monitoring-Motar-Skills-in-Infants.git
+   cd Monitoring-Motar-Skills-in-Infants
+
+2.Create a virtual environment:
+
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+3. Install dependencies:
+
+pip install -r requirements.txt
+
+4. Set up the project by running the provided scripts:
+
+python Infant-Pose-Estimation/download_pretrained_fidip.py
+python Infant-Pose-Estimation/download_pretrained_hrnet.py
+python Infant-Pose-Estimation/download_syrip_data.py
+
+
+🔧 Usage
+
+Running the Model on a Single Image
+
+1. Use the predict_v6.py script to perform pose estimation on a single image:
+
+python Infant-Pose-Estimation/tools/predict_v6.py --image_path path_to_your_image
+
+
+2. Running the Model on Videos
+
+Use the predict_video_v2.py script to perform pose estimation on a video:
+
+🤝 Contributing
+Contributions are welcome! Please follow these steps:
+
+Fork the repository.
+Create a new branch (git checkout -b feature/your-feature-name).
+Commit your changes (git commit -m 'Add some feature').
+Push to the branch (git push origin feature/your-feature-name).
+Open a pull request.
+
+📜 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
+
+
